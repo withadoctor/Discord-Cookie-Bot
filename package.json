@@ -1,0 +1,30 @@
+{
+  "name": "Discord-Cookie-Bot",
+  "version": "1.0.0",
+  "author": "alicelukas@naver.com",
+  "description": "made by alicelukas@naver.com",
+  "keywords": [
+    "Discord-Cookie-Bot",
+    "Cookie-Bot",
+    "CookieBot",
+    "나긋해"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/withadoctor/Discord-Cookie-Bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/withadoctor/Discord-Cookie-Bot/issues"
+  },
+  "homepage": "https://github.com/withadoctor/Discord-Cookie-Bot#readme",
+  "scripts": {
+    "r": "run.bat",
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "nodemon": "^2.0.4",
+    "require-dir": "^1.2.0"
+  }
+}
