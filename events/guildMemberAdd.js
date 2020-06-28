@@ -4,4 +4,6 @@ module.exports = async (bot, member) => {
     const welcomeChannel = guild.channels.find(channel => channel.name == bot.welcomeChannelName);
   
     welcomeChannel.send(`<@${newUser.id}> ${bot.channelwelcomeChannelComment}\n`);
+
+    member.addRole(guild.roles.find(role => role.name == "게스트"));
 }
