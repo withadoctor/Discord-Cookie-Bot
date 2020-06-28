@@ -1,0 +1,14 @@
+const { readdirSync } = require("fs")
+
+class EventHandler {
+	constructor(bot) {
+		const events = readdirSync(`./events/`).filter(d => d.endsWith('.js'));
+		for (let file of events) {
+			const evt = require(`../events/${file}`);
+			let eName = file.split('.')[0];
+			bot.bot.on(eName, evt.handle.bind(bot));
+		}
+	}
+}
+
+module.exports = EventHandler;
