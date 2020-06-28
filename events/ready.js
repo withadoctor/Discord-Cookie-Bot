@@ -1,4 +1,4 @@
-module.exports = bot => {
+module.exports = (bot) => {
     console.log(`${bot.user.username} is online`)
     
     let statuses = [
