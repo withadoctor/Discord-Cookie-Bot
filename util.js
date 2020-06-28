@@ -18,5 +18,15 @@ module.exports = {
     },
     sleep: function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
+    },
+    changeCommandStringLength: function changeCommandStringLength(str, limitLen = 8) {
+        let tmp = str;
+        limitLen -= tmp.length;
+        
+        for(let i=0;i<limitLen;i++) {
+            tmp += ' ';
+        }
+        
+        return tmp;
     }
 }
